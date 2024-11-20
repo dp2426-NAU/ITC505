@@ -1,0 +1,31 @@
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.square.is-off {
+    background-color: black;
+}
+
+#restart-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#restart-button:hover {
+    background-color: #0056b3;
+}
+
