@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Puzzle Game</h1>
+    <button id="restart-button">Restart Game</button>
+    <div id="game-board"></div>
+    
+    <!-- Addendum Section -->
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p><strong>Process:</strong></p>
+        <p>The objective of the project was to create a puzzle game with a random starting configuration that is solvable. The first step was to design a basic 5x5 grid layout to represent the puzzle board. Each square toggles between two colors—white (the "off" state) and black (the "on" state)—whenever clicked. I used a grid layout in CSS to keep the design clean and simple, as it allows for easy placement and management of the square elements.</p>
+        
+        <p>After setting up the basic layout, I focused on creating the game’s logic. I began by implementing a function that would toggle the state of a square, as well as its neighboring squares (up, down, left, right) when clicked. This mechanic mirrors the core concept of the "Lights Out" puzzle, where turning one light on or off also affects adjacent lights.</p>
+
+        <p><strong>Creative Choices:</strong></p>
+        <ul>
+            <li><strong>Grid Size:</strong> I chose a 5x5 grid because it strikes a balance between simplicity and challenge. A smaller grid might have been too easy, while a larger one could make the game frustrating for players.</li>
+            <li><strong>Color Scheme:</strong> The colors white and black were chosen for simplicity and contrast. White represents the "off" state (goal state) and black represents the "on" state. The toggling between these colors is visually clear and immediate, which aids in gameplay.</li>
+            <li><strong>Alert System:</strong> I implemented the "You win!" message using the <code>window.alert()</code> method, which provides an immediate and clear indication to the user once they have solved the puzzle. This ensures the player knows the outcome without ambiguity.</li>
+        </ul>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
